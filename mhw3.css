@@ -1,0 +1,423 @@
+a.buttom,
+#links{
+    cursor:pointer;
+}
+
+a.buttom {
+    color: rgb(250, 241, 229);
+    padding: 5px;
+    font-weight: bolder;
+    background-color: tomato;
+    border: 1px solid dimgray;
+    border-radius: 5px;    
+}
+
+a.buttom:hover{
+    background-color:floralwhite;
+    color:black;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    margin:0;
+    background-color:whitesmoke;
+}
+
+a.buttom,
+#links,
+header h1{
+    font-family: 'Open sans', serif;
+    font-style: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+header .buttom{
+    font-size: 1.1em;
+}
+
+header{
+    color:black;
+    background-image: url("background.jpg");
+    background-size:cover;
+    background-position: center;
+    height: 400px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+header h1{
+    margin-top:60px;
+    margin-bottom: 0px;
+    font-size: 2.5em;
+    line-height: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    text-align: center;
+}
+
+header nav{
+    font-size: .95em;
+    padding:20px;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    
+
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#links a{
+    border: 2px solid dimgray;
+    border-radius: 20px;
+    padding: 10px;
+    margin-right: 5px;
+}
+
+#links a:hover{
+    background-color: floralwhite;
+}
+
+#logo{
+    display:flex;
+    font-size: 3em;
+    text-transform: capitalize;
+    font-weight:bold;
+}
+
+#logo img{
+    width: 75px;
+    height: 75px;
+
+}
+
+#menù{
+    display:none;
+}
+
+#menù div{
+    width: 25px;
+    height: 3px;
+    background-color: bisque;
+    margin: 5px 0;
+}
+
+
+#main{
+    background-color: indianred;
+    border:1px solid rgb(255, 213, 213);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+}
+
+#main div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    flex-direction: row;
+    padding: 1%;
+}
+
+#main img{
+    border-radius: 10px;
+    height: 40%;
+    width: 40%;
+}
+
+.details {
+    font-size: 1.5em;
+    color:black;
+    padding: 20px;
+}
+
+#first{
+    background-color: blanchedalmond;
+    border: 1px solid rgb(255, 213, 213);
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    padding: 15px;
+
+    margin-top: 10px;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    margin-left: 10%;
+}
+
+#first div{
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    
+}
+
+#second{
+    background-color: blanchedalmond;
+    border: 1px solid rgb(255, 213, 213);
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding: 15px;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    margin-right: 10%;
+}
+
+#second div{
+    display: flex;
+    align-items:center;
+    text-align: left;
+    flex-direction: column;
+}
+
+#first img,
+#second img{
+    height: 30%;
+    width:30%;
+    border-radius: 5px;
+}
+
+footer{
+    color: black;
+    background-color: indianred;
+    height:12%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1em;
+    padding: 7px;
+}
+
+#covid{
+    background-color: rgb(0, 150, 199);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    margin-bottom: 10px;
+}
+
+#covid h1{
+    font-size: 1.5em;
+    font-weight: bold;
+    color:black;
+}
+#covid .details{
+    font-size: 1em;
+    margin-bottom: 0px;
+    padding:0;
+}
+
+#row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#plasma, #notizie{
+    background-color: rgb(144, 224, 239);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+    margin: 15px;
+    border-radius: 20px;
+}
+
+#informativa, #giornale{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+}
+
+#informativa img{
+    border-radius: 10px;
+}
+
+#informativa img, #informativa .details{
+    font-size: 1.1em;
+    padding: 5px;
+}
+
+#plasma .buttom{
+    margin-bottom: 5px;
+}
+
+#giornali{
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;   
+ justify-content: space-around;
+ align-items: center;
+}
+
+.giorn{
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    background-color: rgb(173, 232, 244);
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    text-align: center;
+    border-radius:10px;
+}
+
+.giorn img{
+    max-width: 90%;
+    margin-bottom: 10px;
+}
+
+#ricerca{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(144, 224, 239);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#info{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(173, 232, 244);
+    border-radius: 10px;
+    width:90%;
+    margin: 5px;
+}
+
+.dati{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cl{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3px;
+}
+
+
+
+.deaths, .recovered, .active_cases, .total_cases{
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    font-size: 1em;
+    text-align: center;
+}
+
+.deaths{
+    background-color: crimson;
+}
+
+.active_cases{
+    background-color:palegoldenrod;
+}
+
+.recovered{
+    background-color:palegreen;
+}
+
+.total_cases{
+    background-color: blanchedalmond;
+}
+
+.totali, .cambio{
+    background-color: rgb(202, 240, 248);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    margin:5px;
+}
+
+
+form{
+    border-radius: 5px;
+    margin: 7px;
+    margin-top: 2px;
+}
+
+footer h1{
+    margin: 0px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.hidden{
+    display: none;
+}
+
+
+@media (max-width: 500px) {
+    #links {
+      display: none;
+    }
+  
+    #menù {
+      display: block;
+    }
+
+    body{
+        font-size: 14px;
+    }
+
+    #logo img{
+        width: 50px;
+        height: 50px;
+    }
+
+    #logo a{
+        display: none;
+    }
+
+    #main div,
+    #first,
+    #second{
+        flex-direction: column;
+    }
+}
